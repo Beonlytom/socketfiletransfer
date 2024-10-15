@@ -10,7 +10,7 @@ def inviafile(percorsofile, socketdestinazione):
         socketdestinazione.sendall(os.path.basename(percorsofile).encode() + b"<B>" + a.read() +b"<B>" b"<ENDFILE>")
         print("FILE INVIATO CON SUCCESSO")
 
-#il mio cazzo di socket
+#il mio socket
 imcds = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 host = '127.0.0.1'  # Indirizzo locale
